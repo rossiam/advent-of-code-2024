@@ -1,0 +1,13 @@
+== Advent of Code 2024
+
+Solutions that are clearly better than Dan's, for sure, without a doubt, indubitably.
+
+So far, written in TypeScript and run with https://docs.deno.com/runtime/[Deno].
+
+For example,
+
+[,sh]
+----
+$ cd day1
+$ deno --allow-read part1.ts
+----
