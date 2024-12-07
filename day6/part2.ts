@@ -1,7 +1,7 @@
 import { processMap } from './map.ts'
 
 
-const inputData = await Deno.readTextFile('input-test.txt')
+const inputData = await Deno.readTextFile('input.txt')
 
 const startingMap = inputData.split('\n').filter(line => line.length > 0).map(line => [...line])
 
@@ -13,7 +13,7 @@ for (let rowIndex = 0; rowIndex < startingMap.length; ++rowIndex) {
 	const row = startingMap[rowIndex]
 	for (let columnIndex = 0; columnIndex < row.length; ++columnIndex) {
 		const column = row[columnIndex]
-		if (column[columnIndex] === '.') {
+		if (column === '.') {
 			const mapWithNewObstruction = copyMap(startingMap)
 			mapWithNewObstruction[rowIndex][columnIndex] = '#'
 			const result = processMap(mapWithNewObstruction)
