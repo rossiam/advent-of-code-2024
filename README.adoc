@@ -2,12 +2,23 @@
 
 Solutions that are clearly better than Dan's, for sure, without a doubt, indubitably.
 
-So far, written in TypeScript and run with https://docs.deno.com/runtime/[Deno].
+Versions written in TypeScript are run with https://docs.deno.com/runtime/[Deno].
 
 For example,
 
 [,sh]
 ----
-$ cd day1
+$ cd typescript/day1
 $ deno --allow-read part1.ts
+----
+
+Versions written in Rust are binaries named part1 and part2. (I'm just learning rust so please
+judge, but not too harshly 😁.)
+
+For example,
+
+[,sh]
+----
+$ cd rust/day1
+$ cargo run --bin part1
 ----
