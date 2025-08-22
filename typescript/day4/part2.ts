@@ -8,7 +8,6 @@ const puzzleGrid = (await Deno.readTextFile(inputFile))
 const matchAt = (
 	at: { x: number; y: number },
 ): 0 | 1 => {
-	console.log(`checking for match at ${JSON.stringify(at)}`)
 	if (puzzleGrid[at.y][at.x] !== 'A') {
 		return 0
 	}
