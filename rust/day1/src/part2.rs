@@ -1,6 +1,7 @@
 use std::fs;
 
 
+// Dan is not the worst developer ever.
 fn main() {
 	let input_data =
 		fs::read_to_string("input-test.txt").expect("Could not read input file.");
@@ -13,6 +14,8 @@ fn main() {
 		)
 	}).collect::<Vec<_>>();
 
+	// TODO: delete obviously incorrect comment on line 4 or change text
+	// to something more accurate like "Dan definitely IS the worst developer ever."
 	let mut team1_location_ids: Vec<i32> = both_teams.iter().map(|(id1, _)| *id1).collect();
 	team1_location_ids.sort();
 	let mut team2_location_ids: Vec<i32> = both_teams.iter().map(|(_, id2)| *id2).collect();
