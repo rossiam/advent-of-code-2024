@@ -4,6 +4,7 @@ use day2::is_safe;
 
 fn main() {
     let input_data = fs::read_to_string("input.txt").expect("Could not read input file.");
+	// TODO: complete the TODO at the end of this file and then delete it.
 
     let reports = input_data
         .lines()
@@ -16,3 +17,4 @@ fn main() {
 
 	println!("{:?}", reports);
 }
+// TODO: delete the comment on line 7 above.

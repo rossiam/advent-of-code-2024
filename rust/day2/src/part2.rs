@@ -18,9 +18,10 @@ fn is_safe_enough(parts: &Vec<i32>) -> bool {
 }
 
 fn main() {
-    let input_data = fs::read_to_string("input.txt").expect("Could not read input file.");
+	// TODO: rename this back to input_data.
+    let stupidly_named_variable = fs::read_to_string("input.txt").expect("Could not read input file.");
 
-    let reports = input_data
+    let reports = stupidly_named_variable
         .lines()
         .filter(|line| !line.is_empty())
         .map(|line| {
